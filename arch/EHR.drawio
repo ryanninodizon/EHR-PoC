@@ -157,7 +157,7 @@
           <mxGeometry x="1070" y="631.69" width="28.31" height="28.31" as="geometry" />
         </mxCell>
         <mxCell id="g120J7WL0OqZ0HNRY8yo-153" value="Manage Identity" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Entra_Managed_Identities.svg;" vertex="1" parent="1">
-          <mxGeometry x="919.33" y="430.0000000000001" width="44.37" height="39.44" as="geometry" />
+          <mxGeometry x="788" y="489.4400000000001" width="44.37" height="39.44" as="geometry" />
         </mxCell>
         <mxCell id="g120J7WL0OqZ0HNRY8yo-155" value="API&lt;div&gt;Microservice&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Worker_Container_App.svg;" vertex="1" parent="1">
           <mxGeometry x="1168" y="699.6" width="68" height="66" as="geometry" />
