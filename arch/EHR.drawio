@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.10">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.10" pages="2">
   <diagram name="Whole" id="AuyXfq2_moRyz8LbtVFH">
-    <mxGraphModel dx="1844" dy="1119" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="2347" dy="1424" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -205,7 +205,7 @@
           <mxGeometry x="1014.52" y="931" width="44" height="50" as="geometry" />
         </mxCell>
         <mxCell id="g120J7WL0OqZ0HNRY8yo-197" value="Azure Monitor" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/management_governance/Monitor.svg;" vertex="1" parent="1">
-          <mxGeometry x="1291.74" y="934" width="49" height="49" as="geometry" />
+          <mxGeometry x="1349.5" y="830" width="49" height="49" as="geometry" />
         </mxCell>
         <mxCell id="g120J7WL0OqZ0HNRY8yo-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g120J7WL0OqZ0HNRY8yo-198" target="g120J7WL0OqZ0HNRY8yo-21">
           <mxGeometry relative="1" as="geometry" />
@@ -228,9 +228,14 @@
         <mxCell id="g120J7WL0OqZ0HNRY8yo-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="g120J7WL0OqZ0HNRY8yo-199" target="g120J7WL0OqZ0HNRY8yo-198">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="g120J7WL0OqZ0HNRY8yo-209" value="Data Pipeline" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=none;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="632.06" y="730" width="385.63" height="60" as="geometry" />
-        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="qaZ4EONjO_TQS1zwF8Ff" name="DataFlow">
+    <mxGraphModel dx="1291" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
