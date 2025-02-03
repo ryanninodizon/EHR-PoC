@@ -1,0 +1,36 @@
+{
+    "patients": [
+        {
+            "id": "12345",
+            "name": "John Doe",
+            "age": 30,
+            "gender": "male",
+            "address": {
+                "street": "123 Main St",
+                "city": "Anytown",
+                "state": "CA",
+                "zip": "12345"
+            },
+            "medicalHistory": [
+                {
+                    "condition": "Hypertension",
+                    "diagnosisDate": "2020-01-01"
+                },
+                {
+                    "condition": "Diabetes",
+                    "diagnosisDate": "2019-05-15"
+                }
+            ],
+            "laboratoryTests": [
+                {
+                    "labId": "lab123",
+                    "testId": "test001"
+                },
+                {
+                    "labId": "lab123",
+                    "testId": "test002"
+                }
+            ]
+        }
+    ]
+}

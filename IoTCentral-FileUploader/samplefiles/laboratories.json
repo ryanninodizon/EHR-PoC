@@ -1,0 +1,28 @@
+{
+    "laboratories": [
+        {
+            "id": "lab123",
+            "name": "Central Lab",
+            "location": {
+                "street": "456 Lab St",
+                "city": "Labtown",
+                "state": "CA",
+                "zip": "67890"
+            },
+            "tests": [
+                {
+                    "testId": "test001",
+                    "testName": "Complete Blood Count",
+                    "testDate": "2023-10-01",
+                    "result": "Normal"
+                },
+                {
+                    "testId": "test002",
+                    "testName": "Lipid Panel",
+                    "testDate": "2023-10-02",
+                    "result": "High Cholesterol"
+                }
+            ]
+        }
+    ]
+}
