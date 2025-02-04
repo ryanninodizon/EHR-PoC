@@ -2,6 +2,7 @@
 using Microsoft.Azure.Devices.Shared;
 using Microsoft.Azure.Devices.Client.Transport;
 using System.Text;
+using Newtonsoft.Json;
 
 class Program
  {
@@ -10,10 +11,10 @@ class Program
 
      static async Task Main(string[] args)
      {
-         string scopeId = "0ne00E783DC";
-         string deviceId = "1zt5skhk30g";
-         string deviceKey = "zxnRZwcnEhPepj973NZDaK7uUPDT2vrOHn0ATwZ3kWY=";
-         string modelId = "dtmi:IoTCentral:IotCentralFileUploadDevice;1";
+         string scopeId = "<sopeId from IoTCental>"; // "0ne00E783DC";
+         string deviceId = "<deviceId from IoTCental>"; //"1zt5skhk30g";
+         string deviceKey = "<deviceId from IoTCental>"; //"zxnRZwcnEhPepj973NZDaK7uUPDT2vrOHn0ATwZ3kWY=";
+         string modelId = "<modelId from IoTCental>"; //"dtmi:IoTCentral:IotCentralFileUploadDevice;1";
 
          _device = new Device(scopeId, deviceId, deviceKey, modelId);
          _deviceClient = await _device.ProvisionDeviceClient();
@@ -96,7 +97,7 @@ class Program
          string filePath;
          try
          {
-             var payload = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(methodRequest.DataAsJson);
+             var payload = JsonConvert.DeserializeObject<Dictionary<string, string>>(methodRequest.DataAsJson);
              filePath = payload["filePath"];
          }
          catch (Exception ex)
@@ -117,14 +118,13 @@ class Program
 
          await _deviceClient.UpdateReportedPropertiesAsync(new TwinCollection { ["uploadFile"] = result });
 
-         var jsonResponse = Newtonsoft.Json.JsonConvert.SerializeObject(result);
-         return new MethodResponse(System.Text.Encoding.UTF8.GetBytes(jsonResponse), 200);
+         var jsonResponse = JsonConvert.SerializeObject(result);
+         return new MethodResponse(Encoding.UTF8.GetBytes(jsonResponse), 200);
      }
 
      private static async Task<(int StatusCode, string Message, string Filename)> UploadFile(string filePath)
      {
          var result = (StatusCode: 202, Message: "", Filename: "");
-
          try
          {
              var fileStats = new FileInfo(filePath);
