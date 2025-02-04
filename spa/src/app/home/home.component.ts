@@ -9,6 +9,8 @@ import {
 } from '@azure/msal-browser';
 import { filter } from 'rxjs/operators';
 
+import { AppService,Patient } from '../app.service';
+
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
@@ -18,9 +20,12 @@ import { filter } from 'rxjs/operators';
 export class HomeComponent implements OnInit {
   loginDisplay = false;
 
+  patients: Patient[] = [];
+
   constructor(
     private authService: MsalService,
-    private msalBroadcastService: MsalBroadcastService
+    private msalBroadcastService: MsalBroadcastService,
+    private appService: AppService
   ) {}
 
   ngOnInit(): void {
@@ -41,6 +46,14 @@ export class HomeComponent implements OnInit {
       .subscribe(() => {
         this.setLoginDisplay();
       });
+
+      this.loadPatients();
+  }
+
+  loadPatients(): void {
+    this.appService.getPatients().then((data: Patient[]) => {
+      this.patients = data;
+    });
   }
 
   setLoginDisplay() {

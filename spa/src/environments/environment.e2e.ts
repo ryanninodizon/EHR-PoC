@@ -2,8 +2,8 @@ export const environment = {
   production: false,
   msalConfig: {
     auth: {
-      clientId: 'ENTER_CLIENT_ID',
-      authority: 'ENTER_AUTHORITY',
+      clientId: '<Client Id From EntraID>',
+      authority: 'https://login.microsoftonline.com/<Tenant Id from EntraID>',
     },
   },
   apiConfig: {

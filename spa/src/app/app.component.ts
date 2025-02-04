@@ -37,7 +37,7 @@ import { filter, takeUntil } from 'rxjs/operators';
     ]
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'Angular Standalone Sample - MSAL Angular';
+  title = 'Tecan EHR PoC App';
   isIframe = false;
   loginDisplay = false;
   private readonly _destroying$ = new Subject<void>();
@@ -88,11 +88,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   checkAndSetActiveAccount() {
-    /**
-     * If no active account set but there are accounts signed in, sets first account to active account
-     * To use active account set here, subscribe to inProgress$ first in your component
-     * Note: Basic usage demonstrated. Your app may require more complicated account selection logic
-     */
+   
     let activeAccount = this.authService.instance.getActiveAccount();
 
     if (

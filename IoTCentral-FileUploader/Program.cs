@@ -133,7 +133,8 @@ class Program
                  throw new Exception("File does not exist.");
              }
 
-             var blobFilename = $"{Path.GetFileNameWithoutExtension(filePath)}-{DateTime.UtcNow:yyyyMMdd-HHmmss}{Path.GetExtension(filePath)}";
+             //var blobFilename = $"{Path.GetFileNameWithoutExtension(filePath)}-{DateTime.UtcNow:yyyyMMdd-HHmmss}{Path.GetExtension(filePath)}";
+             var blobFilename = $"{Path.GetFileNameWithoutExtension(filePath)}-data{Path.GetExtension(filePath)}";
              var fileStream = File.OpenRead(filePath);
 
              Console.WriteLine($"uploadContent - data length: {fileStats.Length}, blob filename: {blobFilename}");

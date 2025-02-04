@@ -9,8 +9,132 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #f8f9fa; /* Light background color for the entire app */
 }
 
 .container {
     margin: 1%;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.listing {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; /* Light gray border */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+.listing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f1f5f9; /* Light blue background on hover */
+}
+
+.listing-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.listing-location {
+    color: #666666;
+    margin-top: 0.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+.text-green-600 {
+    color: #16a34a;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.transform {
+    transform: scale(1);
+}
+
+.transition {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.duration-500 {
+    transition-duration: 0.5s;
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.sm\:grid-cols-2 {
+    @media (min-width: 640px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.md\:grid-cols-3 {
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.lg\:grid-cols-4 {
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.col-span-full {
+    grid-column: span 4 / span 4;
 }
