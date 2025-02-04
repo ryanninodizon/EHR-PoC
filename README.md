@@ -5,6 +5,6 @@
 ## Data Pipeline/Processing PoC 
 ![](https://github.com/ryanninodizon/EHR-PoC/blob/main/arch/data-pipeline-poc.gif)
 
-## Fetching Processed Data 
+## Securely Retrieving Data 
 ![](https://github.com/ryanninodizon/EHR-PoC/blob/main/arch/fetching-data.gif)
 
