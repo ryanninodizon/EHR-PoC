@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.10" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.10" pages="3">
   <diagram name="Whole" id="AuyXfq2_moRyz8LbtVFH">
     <mxGraphModel dx="2298" dy="1305" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
       <root>
@@ -262,7 +262,90 @@
     </mxGraphModel>
   </diagram>
   <diagram id="qaZ4EONjO_TQS1zwF8Ff" name="DataFlow">
-    <mxGraphModel dx="1291" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="2507" dy="1424" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A8vxGBCD9813CO5-kv8z-7" value="Introspect Machine" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="260" y="140" width="100" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-8" value="Azure&amp;nbsp;&lt;div&gt;IoT Central&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="590" y="140" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-9" value="Blob Storage" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="750" y="140" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-10" value="Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1260" y="140" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-11" value="VPN /&lt;br&gt;Express Route" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="430" y="140" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-12" value="1. Send MQTT message" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="309.32352941176487" y="250" as="sourcePoint" />
+            <mxPoint x="479.5" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-13" value="2. Private link to&amp;nbsp;&lt;div&gt;Azure VNET&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="479.32352941176487" y="290" as="sourcePoint" />
+            <mxPoint x="639.5" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-27" value="Azure&amp;nbsp;&lt;div&gt;Data Factory&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="920" y="140" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-32" value="Data Pipeline" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1090" y="140" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-48" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="A8vxGBCD9813CO5-kv8z-32">
+          <mxGeometry x="45" y="300" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-49" value="Source links&amp;nbsp;&lt;br&gt;Data mapping" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="A8vxGBCD9813CO5-kv8z-48" parent="A8vxGBCD9813CO5-kv8z-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="285" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-41" value="3. Synced data" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="A8vxGBCD9813CO5-kv8z-8">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="669.8103448275863" y="340" as="sourcePoint" />
+            <mxPoint x="799.5000000000002" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-43" value="4. Trigger Storage event" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="A8vxGBCD9813CO5-kv8z-27">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="800.0003448275863" y="380" as="sourcePoint" />
+            <mxPoint x="949.5" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-44" value="5. Run Data Pipeline" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="969.3235294117649" y="410" as="sourcePoint" />
+            <mxPoint x="1139.4999999999995" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-50" value="6. return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1139.4999999999995" y="510" as="sourcePoint" />
+            <mxPoint x="969.3235294117649" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8vxGBCD9813CO5-kv8z-51" value="7. Sync to database" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.5993" width="80" relative="1" as="geometry">
+            <mxPoint x="969.9135294117649" y="570" as="sourcePoint" />
+            <mxPoint x="1310.0899999999995" y="570" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="P11vVME_M8pLL-SUOzLE" name="Web App Flow">
+    <mxGraphModel dx="1379" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
