@@ -1,5 +1,5 @@
 # Info
-
+SPA project using the latest Angular version, showcasing authentication and authorization with the Microsoft Identity Platform. It communicates to backend APIs via Azure API Management (APIM).
 
 If you would like to run this, you have to get the **ClientId** and **TenantId** from the Entra ID's App Registration page and update this file: 
 > /src/environments/environment.dev.ts
