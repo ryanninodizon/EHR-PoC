@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 export class AppService {
   
   constructor(private http: HttpClient){}
-  url = 'http://localhost:5131/patients';
-  //url = 'https://apim-ehr-poc.azure-api.net/api/patients';
+  //url = 'http://localhost:5131/patients';
+  url = 'https://apim-ehr-poc.azure-api.net/api/patients';
 
   async getPatients(): Promise<Patient[]> {
       try {
