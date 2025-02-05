@@ -1,7 +1,7 @@
 # End-to-End Architecture 
 ![](https://github.com/ryanninodizon/EHR-PoC/blob/main/arch/MainFlow.png)
 
-## Demo PoC
+## Quick Demonstrations:
 > Data Pipeline/Processing 
 ![](https://github.com/ryanninodizon/EHR-PoC/blob/main/arch/data-pipeline-poc.gif)
 
