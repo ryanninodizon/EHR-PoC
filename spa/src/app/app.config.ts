@@ -11,6 +11,7 @@ import {
   withInterceptorsFromDi,
   HTTP_INTERCEPTORS,
   withFetch,
+  withInterceptors,
 } from '@angular/common/http';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import {
@@ -36,6 +37,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
+
+import { appInterceptor } from './app.interceptor';
 
 export function loggerCallback(logLevel: LogLevel, message: string) {
   console.log(message);
@@ -90,6 +93,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
+    provideHttpClient(withInterceptors([appInterceptor])),
     importProvidersFrom(
       BrowserModule,
       MatButtonModule,

@@ -1,9 +1,9 @@
 {
     "patients": [
         {
-            "id": "123422",
-            "name": "RyaDIn3 Dizon22",
-            "age": 30,
+            "id": "12234222",
+            "name": "RyNewSan",
+            "age": 331,
             "gender": "male",
             "address": {
                 "street": "12223 Main St",
