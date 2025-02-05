@@ -1,6 +1,7 @@
-# Quick Test
+# Info
 In this demonstration, I show how my account is validated by the Microsoft Identity platform, prompting me for two-factor authentication as part of the security measures. 
 
+## Quick Test
 https://github.com/user-attachments/assets/6a000475-8b4d-44a0-9d21-a79858e89994
 
 ## Quick Reference
