@@ -1,4 +1,4 @@
-# End-to-End Architecture 
+# End-to-End Solution 
 ![](https://github.com/ryanninodizon/EHR-PoC/blob/main/arch/MainFlow.png)
 
 ## Quick Demonstrations:
