@@ -7,7 +7,7 @@ export class AppService {
   
   constructor(private http: HttpClient){}
   url = 'http://localhost:5131/patients';
-  //url = 'https://apim-abp-conference.azure-api.net/api/items';
+  //url = 'https://apim-ehr-poc.azure-api.net/api/patients';
 
   async getPatients(): Promise<Patient[]> {
       try {
