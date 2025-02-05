@@ -8,7 +8,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("AzureSQLConnection")));
 
-// Configure CORS
+/*/  CORS for testing purposes only :)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",
@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
                    .AllowAnyMethod()
                    .AllowAnyHeader();
         });
-});
+});*/
 
 var app = builder.Build();
 
@@ -30,8 +30,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Use CORS policy
-app.UseCors("AllowAllOrigins");
+/*/ Use CORS policy - for testing purposes only :)
+app.UseCors("AllowAllOrigins");*/
 
 app.MapGet("/patients", async (AppDbContext dbContext) =>
 {
