@@ -1,5 +1,5 @@
 # Info
-In this demonstration, I show how my account is validated by the Microsoft Identity platform, prompting me for two-factor authentication as part of the security measures. 
+
 
 If you would like to run this, you have to get the **ClientId** and **TenantId** from the Entra ID's App Registration page and update this file: 
 > /src/environments/environment.dev.ts
@@ -19,9 +19,10 @@ Install Angular dependencies and run:
 npm install or npm i
 npm start or ng serve
 ```
-
-
+ 
 ## Quick Test
+In this demonstration, I show how my account is validated by the Microsoft Identity platform, prompting me for two-factor authentication as part of the security measures. 
+
 https://github.com/user-attachments/assets/6a000475-8b4d-44a0-9d21-a79858e89994
 
 ## Quick Reference
