@@ -2,7 +2,7 @@
 This repository contains four directories that can be used to implement the end-to-end solution.
 - **[IoTCentral-FileUploader](https://github.com/ryanninodizon/EHR-PoC/tree/main/IoTCentral-FileUploader  "IoTCentral-FileUploader") -** This is a basic console app that serves as a FileUploader from local machines. It locates the file to be uploaded and sends it to IoT Central file storage.
 
-- **[api](https://github.com/ryanninodizon/EHR-PoC/tree/main/api "api") -** This is a simple .NET Minimal WebAPI retrieves data from the output of an Azure Data Factory Pipeline.
+- **[api](https://github.com/ryanninodizon/EHR-PoC/tree/main/api "api") -** This is a simple .NET Minimal WebAPI that retrieves data from the output of an Azure Data Factory Pipeline.
 
 - **[arch](https://github.com/ryanninodizon/EHR-PoC/tree/main/arch "arch") -** This folder contains the architecture diagrams.
 
