@@ -11,10 +11,10 @@ class Program
 
      static async Task Main(string[] args)
      {
-         string scopeId = "<sopeId from IoTCental>"; // "0ne00E783DC";
-         string deviceId = "<deviceId from IoTCental>"; //"1zt5skhk30g";
-         string deviceKey = "<deviceId from IoTCental>"; //"zxnRZwcnEhPepj973NZDaK7uUPDT2vrOHn0ATwZ3kWY=";
-         string modelId = "<modelId from IoTCental>"; //"dtmi:IoTCentral:IotCentralFileUploadDevice;1";
+         string scopeId = "<sopeId from IoTCental>"; 
+         string deviceId = "<deviceId from IoTCental>"; 
+         string deviceKey = "<deviceId from IoTCental>"; 
+         string modelId = "<modelId from IoTCental>"; 
 
          _device = new Device(scopeId, deviceId, deviceKey, modelId);
          _deviceClient = await _device.ProvisionDeviceClient();
